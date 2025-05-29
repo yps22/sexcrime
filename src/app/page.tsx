@@ -4,6 +4,16 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center py-12 px-4">
       <header className="mb-10 text-center">
+        <div className="flex justify-center mb-4">
+          <Image
+            src="/sexcrime-center-main.png"
+            alt="성범죄센터 대표 이미지"
+            width={180}
+            height={180}
+            className="rounded-full shadow-lg border object-cover"
+            priority
+          />
+        </div>
         <h1 className="text-3xl sm:text-5xl font-bold text-blue-900 mb-2">
           윤승환 변호사의 성범죄센터
         </h1>
@@ -44,24 +54,23 @@ export default function Home() {
             <div>
               <span className="font-semibold">전화:</span>{" "}
               <a
-                href="tel:02-1234-5678"
+                href="tel:010-8299-5301"
                 className="text-blue-700 hover:underline"
               >
-                02-1234-5678
+                010-8299-5301
               </a>
             </div>
             <div>
               <span className="font-semibold">이메일:</span>{" "}
               <a
-                href="mailto:lawyer@example.com"
+                href="mailto:yps222@naver.com"
                 className="text-blue-700 hover:underline"
               >
-                lawyer@example.com
+                yps222@naver.com
               </a>
             </div>
             <div>
-              <span className="font-semibold">주소:</span> 서울시 서초구 서초대로
-              123, 5층
+              <span className="font-semibold">주소:</span> 서울 서초구 서초대로 286, 10층 1008호 (서초동, 서초프라자)
             </div>
             <div>
               <span className="font-semibold">상담시간:</span> 평일 09:00~18:00
@@ -70,20 +79,19 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <h2 className="text-2xl font-semibold text-blue-800 mb-2">
-            오시는 길
-          </h2>
-          <div className="text-gray-700">
-            지하철 2호선 서초역 3번 출구 도보 5분
-          </div>
-          <div className="mt-2">
-            <Image
-              src="/lawoffice-map.png"
-              alt="오시는 길"
-              width={600}
-              height={300}
-              className="rounded-lg border"
-            />
+          <h2 className="text-2xl font-semibold text-blue-800 mb-2">오시는 길</h2>
+          <div className="text-gray-700">지하철 2호선 서초역 3번 출구 도보 5분</div>
+          <div className="mt-2 flex flex-col items-center">
+            <iframe
+              title="구글 지도 - 서초프라자"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.095282019624!2d127.0202343153106!3d37.4923619798107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca18b2e2e2e2f%3A0x6e7b6e7b6e7b6e7b!2z7ISc7Jq47Yq567OE7IucIOyEnOyauO2KuOq1rCDshJzsmqjtirjqtawg7J6l7Iqk7Yq567OE7Iuc!5e0!3m2!1sko!2skr!4v1685520000000!5m2!1sko!2skr"
+              width="100%"
+              height="300"
+              style={{ border: 0, borderRadius: '12px', minWidth: '300px', maxWidth: '600px' }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </section>
         <section>
@@ -131,7 +139,7 @@ export default function Home() {
         </div>
         <div>개인정보관리책임자 : 윤승환</div>
         <div>
-          주소 : (분사무소) 서울 서초구 서초대로 286­, 1008호 (서초동,
+          주소 : (분사무소) 서울 서초구 서초대로 286, 1008호 (서초동,
           서초프라자)
         </div>
         <div className="mt-2">
